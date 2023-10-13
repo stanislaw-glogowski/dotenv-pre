@@ -1,0 +1,33 @@
+{
+  "name": "dotenv-pre",
+  "description": "Pre-configured `dotenv` module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./index.js",
+  "types": "./index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanislaw-glogowski/dotenv-pre.git"
+  },
+  "scripts": {
+    "start": "exit 0",
+    "format": "prettier --write \"*.ts\"",
+    "compile": "tsc",
+    "prepublish": "npm run format && npm run compile"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "dotenv-expand": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
