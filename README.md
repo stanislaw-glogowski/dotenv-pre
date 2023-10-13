@@ -13,13 +13,6 @@ npm i dotenv-pre -S
 * Use `.env[.<name>]` file(s) for default and `.env[.<name>].local` for local configurations. 
 * Add `.env[.<name>].local` file(s) to `.gitignore`
 
-### Files order
-
-* `.env[.<name>].local` (eg. `.env.api.local`)
-* `.env[.<name>]` (eg. `.env.api`)
-* `.env.local`
-* `.env`
-
 ### Example without `name`
 
 ```typescript
@@ -34,11 +27,18 @@ import 'dotenv-pre/config';
 import { config } from 'dotenv-pre';
 
 config({
-  name: 'api'
+  name: 'api',
 });
 
 // ...
 ```
+
+### Files order
+
+* `.env[.<name>].local` (e.g. `.env.api.local`)
+* `.env[.<name>]` (e.g. `.env.api`)
+* `.env.local`
+* `.env`
 
 ## License
 
