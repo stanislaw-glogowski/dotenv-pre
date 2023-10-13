@@ -13,7 +13,7 @@ npm i dotenv-pre -S
 * Use `.env[.<name>]` file(s) for default and `.env[.<name>].local` for local configurations. 
 * Add `.env[.<name>].local` file(s) to `.gitignore`
 
-### Files order:
+### Files order
 
 * `.env[.<name>].local` (eg. `.env.api.local`)
 * `.env[.<name>]` (eg. `.env.api`)
